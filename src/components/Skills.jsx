@@ -1,0 +1,4 @@
+import { Code2, Database, PenTool } from 'lucide-react'
+import { resume } from '../data/resumeData'
+const icons=[Code2,Database,PenTool]
+export default function Skills(){return <section id="skills" className="section shell"><div className="section-head"><div><span className="eyebrow"><i/> MY TOOLKIT</span><h2>Tools of the <em>trade.</em></h2></div><span className="section-index">04 / SKILLS</span></div><div className="skills-grid">{resume.skills.map((group,i)=>{const Icon=icons[i];return <article className="skill-card" key={group.group}><div className="skill-icon"><Icon size={21}/></div><span className="skill-count">0{i+1}</span><h3>{group.group}</h3><div className="skill-pills">{group.items.map(s=><span key={s}>{s}</span>)}</div></article>})}</div><div className="language-line"><span>LANGUAGES</span>{resume.languages.map(l=><b key={l}>{l}</b>)}</div></section>}

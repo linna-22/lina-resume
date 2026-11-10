@@ -1,0 +1,2 @@
+import { ArrowUp, Mail } from 'lucide-react'
+export default function Footer(){return <footer className="footer"><div className="shell footer-inner"><a href="#home" className="brand"><span className="brand-mark">L.</span><span>Oeu Lina<span className="brand-dot">.</span></span></a><span>© {new Date().getFullYear()} Oeu Lina. Crafted with care.</span><a className="back-top" href="#home">BACK TO TOP <ArrowUp size={14}/></a></div></footer>}
